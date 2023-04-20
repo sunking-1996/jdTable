@@ -1,0 +1,13 @@
+一、双击data.bat执行即可
+二、如果想新建开发环境数据表，将creatTable.py文件中的host修改为192.168.16.200即可
+三、如果想新建测试环境数据表，将creatTable.py文件中的host修改为192.168.16.201即可
+四、如果想修改月份表的月份，将jd.sql中的202207（年月）全局修改为对应的月份
+五、工具说明：解决每月初始时开发、测试环境月份记录表缺失而影响的测试工作，减去人工去新建对应月份表的繁琐步骤，此脚本新建的是jd_cluster_01数据库下面的月份记录表，相关记录表如下
+1.京东订单打印信息表 jd_order_print
+2.交易电子面单信息 package_info
+3.已打印包裹日志信息表 print_log_info
+4.包裹打印记录 print_log_part
+5.发货日志信息表 send_order_log_info
+6.发货日志表 send_order_log
+7.电子面单记录信息表 waybill_account_apply_log_info
+8.电子面单申请日志 waybill_account_apply_log
